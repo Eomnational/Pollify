@@ -16,6 +16,10 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      '@typescript-eslint': tseslint.configs.eslint,
+      '@typescript-eslint/tslint': tseslint.configs.tslint,
+      '@typescript-eslint/eslint-plugin': tseslint.configs.eslintPlugin,
+    
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -23,6 +27,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      "quotes": ["error", "double"],
     },
   },
 )
