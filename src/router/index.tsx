@@ -51,25 +51,25 @@ const router=createBrowserRouter([
                 ]
             },
             {
-                path: 'question',
-                element:<QuestionLayout/>,
-                children: [
-                    {
-                        path: 'edit',
-                        element: <Edit/>
-                    },
-                    {
-                        path:'stat',
-                        element: <Stat/>
-                    },
-                ]
-            },
-            {
                 path: '*',//404路由配置写在最后
                 element: <NotFound/>
             },
             
         ],
+    },
+    {
+        path: 'question',
+        element:<QuestionLayout/>,
+        children: [
+            {
+                path: 'edit/:id',
+                element: <Edit/>
+            },
+            {
+                path:'stat/:id',
+                element: <Stat/>
+            },
+        ]
     },
 ]);
 

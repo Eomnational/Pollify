@@ -40,7 +40,8 @@ import styles from './List.module.scss';
 
 const List:FC = () => {
     const [list,setList] = useState(rawQuestionList);
-    return(<>
+    return(
+    <>
     <div className={styles.header}>
         <div className={styles.left}>
             <h3>我的问卷</h3>
@@ -52,7 +53,8 @@ const List:FC = () => {
         return <QuestionCard key={_id} {...q} />
     })}</div>
     <div className={styles.footer}>footer</div>
-    </>)
+    </>
+    )
 }
 
 export default List;

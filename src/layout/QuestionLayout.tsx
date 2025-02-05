@@ -1,5 +1,5 @@
 import React,{FC} from'react';
-
+import {Outlet} from "react-router-dom";
 const QuestionLayout:FC = () => {
   return (
         <>
@@ -7,10 +7,7 @@ const QuestionLayout:FC = () => {
         QuestionLayout header
         </div>
         <div>
-        QuestionLayout container
-        </div>
-        <div>
-        QuestionLayout footer
+          <Outlet/>
         </div>
         </>
   )
