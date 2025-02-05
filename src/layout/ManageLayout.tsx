@@ -1,6 +1,6 @@
 import React,{FC} from'react';
 import {Outlet} from "react-router-dom";
-import styles from './ManageLayout.module.css';
+import styles from './ManageLayout.module.scss';
 const ManageLayout:FC = () => {
   return (
         <>
