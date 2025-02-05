@@ -1,0 +1,48 @@
+import React from'react'
+import List from './pages/List'
+const rawQuestionList = [
+  {
+      _id: 'q1',
+      title: '问卷1',
+      isPublished: false,
+      isStar:false,
+      answerCount: 10,
+      createAt: '3月1日 13:30', 
+    },
+    {
+      _id: 'q2',
+      title: '问卷2',
+      isPublished: true,
+      isStar:true,
+      answerCount: 20,
+      createAt: '3月2日 13:30',
+    },
+    {
+      _id: 'q3',
+      title: '问卷3',
+      isPublished: false,
+      isStar:true,
+      answerCount: 30,
+      createAt: '3月3日 13:30',
+    },  
+    {
+      _id: 'q4',
+      title: '问卷4',
+      isPublished: true,
+      isStar:false,
+      answerCount: 40,
+      createAt: '3月4日 13:30',
+    },
+]
+function App() {
+  return (
+    <>
+    <div className='App'>
+      <h1 style={{ background: 'yellow' }}>问卷 FE</h1>
+      <List />
+    </div>
+    </>
+  )
+}
+
+export default App

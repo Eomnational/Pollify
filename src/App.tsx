@@ -1,8 +1,10 @@
 import React from'react'
-import List from './pages/List'
+import List from './pages/manage/List'
+
 
 function App() {
   return (
+    
     <div className='App'>
       <h1 style={{ background: 'yellow' }}>问卷 FE</h1>
       <List />
