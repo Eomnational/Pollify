@@ -1,21 +1,27 @@
 import React,{FC} from'react';
 import {useNavigate,Link} from'react-router-dom';
+import {Button} from 'antd'
+
+
 
 const Home:FC = () => {
   const nav = useNavigate();
-  function clickHandler() {
-    // nav('/login');
-    nav({
-      pathname: '/login',
-      search: '?b=21',
+  const login=()=>{
+    nav('/login');
+    // nav({
+    //   pathname: '/login',
+    //   search: '?b=21',
 
-    })
+    // })
   }
   return (<>
   <div>
-    <p>Home</p>
+    <p>Home
+      <Button >antd button</Button>
+    </p>
     <div>
-      <button onClick={clickHandler}>登录</button>
+      <button onClick={login}>登录</button>
+      &nbsp;
       <Link to="/register">注册</Link>
     </div>
   </div>

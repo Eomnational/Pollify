@@ -1,4 +1,4 @@
-import React,{FC} from'react';
+import React,{FC,Suspense} from'react';
 import {Outlet} from "react-router-dom";
 const QuestionLayout:FC = () => {
   return (
@@ -7,7 +7,10 @@ const QuestionLayout:FC = () => {
         QuestionLayout header
         </div>
         <div>
+          <Suspense fallback={<div>Loading...</div>}>
           <Outlet/>
+          </Suspense>
+          
         </div>
         </>
   )
