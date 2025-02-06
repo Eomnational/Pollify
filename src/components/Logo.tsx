@@ -13,7 +13,7 @@ const Logo: FC = () => {
           <Title>
             <FormOutlined />
           </Title>
-          <Title>Pollify</Title>
+          <Title >Pollify</Title>
         </Space>
       </Link>
     </div>
