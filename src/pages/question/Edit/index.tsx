@@ -1,8 +1,9 @@
 import React,{FC} from'react';
 import { useParams } from "react-router-dom";
 import Styles from './index.module.scss';
+import EditCanvas from './EditCanvas';
 const Edit:FC = () => {
-  const { id='' } = useParams();
+  // const { id='' } = useParams();
   return (
   <>
   <div className={Styles.container}>
@@ -14,7 +15,7 @@ const Edit:FC = () => {
           <div className={Styles.left}>left</div>
           <div className={Styles.main}>
             <div className={Styles['canvas-wrapper']}>
-              <div style={{height: '900px'}}>画布测试滚动</div>
+              <EditCanvas />
             </div>
           </div>
           <div className={Styles.right}>right</div>

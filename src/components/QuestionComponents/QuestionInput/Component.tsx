@@ -7,7 +7,7 @@ const { Paragraph } = Typography
 const QuestionInput: FC<QuestionInputPropsType> = (props) => {
     const { title = '', placeholder = '请输入...' } = { ...QuestionInputDefaultProps, ...props }
     return (<div>
-        <Paragraph>{title}</Paragraph>
+        <Paragraph strong style={{ marginBottom: '0.4em' }}>{title}</Paragraph>
         <Input placeholder={placeholder} />
     </div>)
 }
