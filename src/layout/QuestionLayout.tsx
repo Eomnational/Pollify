@@ -3,9 +3,9 @@ import {Outlet} from "react-router-dom";
 const QuestionLayout:FC = () => {
   return (
         <>
-        <div>
+        {/* <div>
         QuestionLayout header
-        </div>
+        </div> */}
         <div>
           <Suspense fallback={<div>Loading...</div>}>
           <Outlet/>

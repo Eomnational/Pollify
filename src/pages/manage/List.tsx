@@ -1,6 +1,6 @@
 import React,{FC,useState} from'react';
 import QuestionCard from '../../components/QuestionCard';
-import styles from './List.module.scss';
+import styles from './common.module.scss';
 
  const rawQuestionList = [
     {
@@ -48,7 +48,9 @@ const List:FC = () => {
         </div>
         <div className={styles.right}>搜索</div>
     </div>
-    <div className={styles.content} >{rawQuestionList.map(q=>{
+    <div className={styles.content} >
+      {/* 问卷判断 */}
+      {rawQuestionList.length>0&&rawQuestionList.map(q=>{
         const {_id}=q
         return <QuestionCard key={_id} {...q} />
     })}</div>
