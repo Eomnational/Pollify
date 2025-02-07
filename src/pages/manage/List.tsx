@@ -57,7 +57,7 @@ const List:FC = () => {
         const {_id}=q
         return <QuestionCard key={_id} {...q} />
     })}</div>
-    <div className={styles.footer}>footer</div>
+    <div className={styles.footer}>loading...</div>
     </>
     )
 }
