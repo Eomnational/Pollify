@@ -5,8 +5,8 @@ const Star:FC = () => {
   return (<>
   <div>Star Page</div>
   </>)
-}
+} 
 
 
 
-  export default Star;
+export default Star;
