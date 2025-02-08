@@ -1,6 +1,7 @@
 import React,{FC,useState} from'react';
 import styles from './common.module.scss'
 import { Typography, Spin, Empty } from 'antd'
+import QuestionCard from '../../components/QuestionCard';
 
 const { Title } = Typography
 const rawQuestionList = [

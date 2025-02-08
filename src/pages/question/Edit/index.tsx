@@ -11,6 +11,7 @@ const Edit:FC = () => {
        console.log('data:',data);
        
     }
+          fn();
   },[])
   return (
   <>
