@@ -42,7 +42,8 @@ const rawQuestionList = [
 const Star:FC = () => {
 
   const [list,setList] = useState(rawQuestionList);
-  return (<>
+  return (
+          <>
               <div className={styles.header}>
                 <div className={styles.left}>
                     <Title level={3}>星标问卷</Title>
@@ -51,10 +52,13 @@ const Star:FC = () => {
             </div>
             <div className={styles.content} >
               {/* 问卷判断 */}
-              {rawQuestionList.length>0&&rawQuestionList.map(q=>{
+              {list.length === 0 && <Empty description="暂无数据" />}
+              { list.length > 0 && list.map(q=>{
                 const {_id}=q
                 return <QuestionCard key={_id} {...q} />
-            })}</div>
+            })}
+            </div>
+
             <div className={styles.footer}>分页</div>
        </>
   )

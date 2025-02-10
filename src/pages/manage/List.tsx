@@ -53,7 +53,7 @@ const List:FC = () => {
     </div>
     <div className={styles.content} >
       {/* 问卷判断 */}
-      {rawQuestionList.length>0&&rawQuestionList.map(q=>{
+      {list.length>0&&list.map(q=>{
         const {_id}=q
         return <QuestionCard key={_id} {...q} />
     })}</div>
