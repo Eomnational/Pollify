@@ -1,14 +1,16 @@
-import React from'react'
-import List from './pages/manage/List'
-import {RouterProvider} from 'react-router-dom'
-import routerConfig from './router'
-import 'antd/dist/reset.css'
+import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
+import routerConfig from './router';
+import 'antd/dist/reset.css';
 
 function App() {
   return (
-    <RouterProvider router={routerConfig}></RouterProvider>
-
-  )
+    <Provider store={store}>
+      <RouterProvider router={routerConfig} />
+    </Provider>
+  );
 }
 
-export default App
+export default App;
